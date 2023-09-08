@@ -15,31 +15,31 @@ namespace ejercicio_7
 
             string calificacion;
 
-            if (notafinal >= 90)
+            if (notafinal <=100)
             {
                 calificacion = "A";
             }
-            else if (notafinal >= 80)
+            else if (notafinal <= 89)
             {
                 calificacion = "B";
             }
-            else if (notafinal >= 70)
+            else if (notafinal <= 79)
             {
                 calificacion = "C";
             }
-            else if (notafinal >= 60)
+            else if (notafinal <= 69)
             {
                 calificacion = "D";
             }
-            else if (notafinal >= 0)
+            else if (notafinal <= 0)
             {
                 calificacion = "F";
             }
-            else 
+           else
             {
-                calificacion= "Ingrese una nota valida";
+                calificacion = "Ingrese una nota valida";
             }
-           
+
             Console.WriteLine("Su calificación es: " + calificacion);
             Console.ReadKey();
         }
